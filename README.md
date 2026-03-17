@@ -1,138 +1,139 @@
-📌 Project Overview
+# 📊 Employee Attrition Analysis Dashboard
 
-The Employee Attrition Dashboard is a data analytics project that analyzes employee data to understand the key factors that influence employee attrition within an organization. The goal of this project is to help HR teams and management identify patterns, trends, and insights related to employee turnover.
+## 🧾 Overview
 
-The dashboard provides interactive visualizations that allow users to explore employee demographics, department performance, salary distribution, and attrition trends. By analyzing these insights, organizations can take data-driven decisions to improve employee retention.
+This project presents an **Employee Attrition Analysis Dashboard** built to uncover key insights into workforce trends, employee turnover, and organizational performance. It leverages HR data to visualize patterns across departments, salary bands, job roles, and demographics.
 
-📂 Dataset Description
+The dashboard helps stakeholders:
 
-The dataset contains detailed employee information used to analyze attrition patterns. Some of the important features include:
+* Understand **why employees leave**
+* Identify **high-risk groups**
+* Improve **retention strategies**
 
-Column	Description
-EmpID	Unique employee identifier
-Age	Age of the employee
-AgeGroup	Age category of the employee
-Attrition	Indicates whether the employee left the company
-AttritionCount	Count representing attrition occurrence
-BusinessTravel	Frequency of employee travel
-DailyRate	Daily salary rate
-Department	Department where the employee works
-DistanceFromHome	Distance between employee home and office
-Education	Education level
-EducationField	Field of study
-EnvironmentSatisfaction	Employee satisfaction with work environment
-Gender	Employee gender
-HourlyRate	Hourly salary rate
-JobInvolvement	Level of employee involvement in work
-JobLevel	Employee job level
-JobRole	Specific role of the employee
-JobSatisfaction	Satisfaction level with job
-MaritalStatus	Marital status
-MonthlyIncome	Employee monthly income
-SalarySlab	Salary range category
-MonthlyRate	Monthly pay rate
-NumCompaniesWorked	Number of companies previously worked
-OverTime	Whether the employee works overtime
-PercentSalaryHike	Percentage salary increase
-PerformanceRating	Performance evaluation score
-RelationshipSatisfaction	Satisfaction with work relationships
-TotalWorkingYears	Total years of work experience
-TrainingTimesLastYear	Number of training sessions attended
-WorkLifeBalance	Work-life balance rating
-YearsAtCompany	Years spent at the company
-YearsInCurrentRole	Years in the current role
-YearsSinceLastPromotion	Years since last promotion
-YearsWithCurrManager	Years working with current manager
-🚀 Dashboard Features
+---
 
-The dashboard provides multiple analytical features to explore employee attrition data effectively:
+## 📁 Dataset Description
 
-1️⃣ Department Performance Analysis
+The dataset contains employee-level HR records with the following key attributes:
 
-This section analyzes employee distribution and performance across different departments.
-Key insights include:
+### 🔑 Core Columns
 
-Employee count by department
+* **EmpID** – Unique employee identifier
+* **Age / AgeGroup** – Employee age and categorized group
+* **Attrition** – Whether the employee left (Yes/No)
+* **AttritionCount** – Binary indicator (1 = left, 0 = stayed)
+* **Department** – Employee department
+* **JobRole** – Specific role
+* **SalarySlab / MonthlyIncome** – Compensation details
+* **Education / EducationField** – Academic background
+* **BusinessTravel** – Travel frequency
+* **WorkLifeBalance** – Work-life satisfaction score
+* **YearsAtCompany** – Tenure
 
-Department-wise performance ratings
+### 📊 Sample Data
 
-Job role distribution
+```
+EmpID   Age  AgeGroup  Attrition  Department              JobRole                  MonthlyIncome
+RM297   18   18-25     Yes        Research & Development  Laboratory Technician    1420
+RM302   18   18-25     No         Sales                   Sales Representative     1200
+RM458   18   18-25     Yes        Sales                   Sales Representative     1878
+```
 
-Work environment satisfaction levels
+---
 
-This helps understand which departments are performing well and which may require HR attention.
+## 📌 Dashboard Features
 
-2️⃣ Attrition Insights & Trends
+### 1️⃣ Overview Page
 
-This section focuses on identifying patterns behind employee attrition.
+* Total Employees: **5500**
+* Attrition Count: **1106**
+* Attrition Rate: **20%**
+* Average Salary: **84.73K**
 
-Key analyses include:
+**Visuals:**
 
-Attrition rate by age group
+* Attrition by Department
+* Employees by Salary Slab
 
-Attrition by department
+---
 
-Attrition based on overtime
+### 2️⃣ Department Performance
 
-Attrition trends across job roles
+* Total Employees by Department
+* Average Salary Comparison
+* Attrition Rate by Department
+* Job Role Distribution
 
-Relationship between job satisfaction and attrition
+---
 
-These insights help identify major factors contributing to employee turnover.
+### 3️⃣ Attrition Insights & Trends
 
-3️⃣ Salary Distribution & Insights
+* Attrition by Age Group
+* Attrition by Salary Slab
+* Attrition by Education Field
+* Attrition by Job Role
 
-This page explores how salary impacts employee behavior and retention.
+---
 
-Key insights include:
+## 🔍 Key Insights
 
-Salary distribution across employees
+* 🔺 **Higher attrition** observed in:
 
-Monthly income analysis
+  * Sales and HR departments
+  * Lower salary brackets
+  * Younger employees (18–25)
 
-Salary slab comparison
+* 🔻 **Lower attrition** observed in:
 
-Salary vs attrition trends
+  * Senior roles
+  * Higher salary slabs
+  * Employees with longer tenure
 
-This helps determine whether compensation plays a role in employee attrition.
+* 📉 Employees with **poor work-life balance** and **frequent travel** show higher attrition risk
 
-🧭 Dashboard Navigation
+---
 
-The application contains multiple interactive pages for better user experience:
+## 🛠️ Tools & Technologies
 
-Department Performance Analysis
+* **Power BI** – Dashboard creation & visualization
+* **Excel / CSV** – Data source
+* **Data Modeling** – Relationships & calculated measures
 
-Attrition Insights & Trends
+---
+![Alt text](https://github.com/hetvi77004/employee-attrition/blob/main/home.png)
+![Alt text](https://github.com/hetvi77004/employee-attrition/blob/main/dashbord.png)
+![Alt text](https://github.com/hetvi77004/employee-attrition/blob/main/trends.png)
+![Alt text](https://github.com/hetvi77004/employee-attrition/blob/main/salary.png)
 
-Salary Distribution & Insights
+---
 
-Users can easily navigate between these pages to explore different aspects of the employee dataset.
+## 🚀 How to Use
 
-📊 Key Objectives of the Project
+1. Clone the repository
+2. Open the `.pbix` file in Power BI
+3. Interact with filters:
 
-Understand factors affecting employee attrition
+   * Department
+   * Age Group
+   * Education Field
+   * Salary Slab
 
-Identify patterns in employee behavior
+---
 
-Analyze department performance
+## 🎯 Business Use Cases
 
-Study salary distribution among employees
+* HR analytics & reporting
+* Attrition prediction strategies
+* Workforce planning
+* Compensation benchmarking
 
-Provide HR teams with actionable insights
+---
 
-💡 Key Insights
+## 📈 Future Improvements
 
-Some important insights discovered from the analysis include:
-
-Younger employees tend to have higher attrition rates.
-
-Employees working overtime show a higher likelihood of leaving.
-
-Salary distribution impacts employee retention.
-
-Job satisfaction and work-life balance strongly influence attrition.
+* Add **predictive modeling (ML)** for attrition
+* Integrate **real-time HR data pipelines**
+* Build **automated alerts** for high-risk employees
 
 
-📌 Conclusion
-
-This project demonstrates how data visualization and analytics can help organizations better understand employee attrition. By identifying the main factors that influence employee turnover, companies can implement strategies to improve employee satisfaction and retention.
+⭐ If you find this project useful, don’t forget to star the repo!
